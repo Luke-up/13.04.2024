@@ -1,0 +1,26 @@
+- Create users:
+    id, 
+    name, 
+    email, 
+    games_list, 
+
+- Create games:
+    id (same as bgg id?),
+    title, 
+    price, 
+    available stores, 
+    link to the game on those stores, 
+    link to bgg,
+
+* How to make sure there is only one copy of a type of game in the db when spelling might be different on different sites, 
+    solution: make sure every game found on a website is linked to the correct bgg game, 
+            this can be linked to the bgg id for a game
+    implimentation: when a new game is found on a store site it can be searched for in bgg and the id retrieved,
+        How do we search for the bgg game using just the string title found on store site? (Google)
+
+* When a user types in a game they should be able to select it even if it does not exist so that when a store stocks it, 
+        they will be notified
+    solution: users can select a bgg game and corresponding id will be assigned to their gameslist,
+    implimentation same as above, a reliable method of searching bgg using slightly different perameters is needed (Google)
+    
+    site:xxx "string" - use first result
